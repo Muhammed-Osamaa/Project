@@ -1,0 +1,34 @@
+<app-header/>
+
+<div class="container p-4" style="margin-top:0px;">
+  <div class="row">
+    <div class="col-12 mt-2">
+      <button  type="button" class="btn btn-dark btn-lg mx-2">Flights <i class="fa fa-plane"></i></button>
+      <button routerLink="/hotels" type="button" class="btn btn-dark btn-lg mx-2">Hotels <i class="fa fa-home"></i> </button>
+    </div>
+  </div>
+  <form #editForm="ngForm" class="mt-2" (ngSubmit)="onSend()">
+    <div class="row">
+      <div class="col-7">
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control" placeholder="Destination" 
+          [(ngModel)]="country" name="country">
+          <label for="floatingInput">Destination</label>
+        </div>
+      </div>
+
+      <div class="col-5">
+        <div class="form-floating">
+          <input type="type" class="form-control" placeholder="Guests" autocomplete="off"
+          [(ngModel)]="guest" name="guest">
+          <label for="floatingPassword">Guests</label>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 text-end ">
+        <button type="submit" class="btn btn-success  btn-lg">Send</button>
+    </div>
+  </form>
+  <router-outlet/>
+</div>

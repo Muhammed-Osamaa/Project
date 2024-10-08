@@ -1,0 +1,19 @@
+.card-img-wrapper img {
+    transform: scale(1.0,1.0);
+    /* transition-duration: 1000ms;
+    transition-timing-function: ease-out; */
+    transition: all 1s ease-in-out;
+
+}   
+
+.card:hover img {
+    transform: scale(1.1,1.1);
+    /* transition-duration: 1000ms;
+    transition-timing-function: ease-out; */
+    
+    
+}
+
+.card-img-wrapper {
+    overflow: hidden;
+}

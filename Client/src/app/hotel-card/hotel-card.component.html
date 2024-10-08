@@ -1,0 +1,35 @@
+
+<div class="card text-white bg-secondary mb-3">
+  <div class="card-img-wrapper">
+    <carousel [noPause]="false">
+      @for (item of room().photo; track item.id) {
+      <slide>
+        <img
+          src="{{ item.url }}"
+          class="card-img-top"
+          alt="{{ item.id }}"
+        />
+      </slide>
+      }
+    </carousel>
+  </div>
+  <div class="card-body p-2">
+    <div class="row">
+      <div class="col-10">
+        <p>Location is {{ room().country }},{{ room().city }}</p>
+      </div>
+      <div class="col-2">
+        <p><span>{{ room().rating }}  </span> <i class="fa fa-star"> </i></p>
+      </div>
+      <div class="col-12">
+        <p>The owner is {{ room().roomOwner }}</p>
+      </div>
+      <div class="col-12">
+        <p>Price is {{ room().price | currency }} per night</p>
+      </div>
+      <div class="col-12 text-center btn-group" >
+        <button routerLink="/hotels/{{room().roomID}}" class="btn btn-lg btn-primary" type="button">More Details</button>
+      </div>
+    </div>
+  </div>
+</div>

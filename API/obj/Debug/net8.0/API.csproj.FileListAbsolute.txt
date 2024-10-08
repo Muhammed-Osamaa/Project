@@ -127,3 +127,4 @@ C:\Users\muham\OneDrive\Desktop\Project\api\bin\Debug\net8.0\runtimes\win-arm64\
 C:\Users\muham\OneDrive\Desktop\Project\api\bin\Debug\net8.0\runtimes\win-x64\native\e_sqlite3.dll
 C:\Users\muham\OneDrive\Desktop\Project\api\bin\Debug\net8.0\runtimes\win-x86\native\e_sqlite3.dll
 C:\Users\muham\OneDrive\Desktop\Project\api\bin\Debug\net8.0\AutoMapper.dll
+C:\Users\muham\OneDrive\Desktop\Project\api\obj\Debug\net8.0\API.sourcelink.json

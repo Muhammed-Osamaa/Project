@@ -1,0 +1,12 @@
+<div class="row">
+    @if (rooms().length > 0 ) {
+        @for (room of rooms(); track room.roomID) {
+            <div class="col-4 mt-4">
+                <app-hotel-card [room]="room"/>
+            </div>
+        }
+    }@else {
+        <h1 class="text-danger text-center mt-4">No Rooms Are Found!</h1>
+    }
+
+</div>
