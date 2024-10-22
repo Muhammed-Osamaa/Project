@@ -1,7 +1,14 @@
 <div class="row">
-    @for (room of roomService.hotels(); track room.roomID) {
+    @for (room of paginatedRooms(); track room.roomID) {
         <div class="col-4 mt-4">
             <app-hotel-card [room]="room" />
         </div>
     }
 </div>
+
+<pagination 
+  [totalItems]="totalItems()" 
+  [itemsPerPage]="itemsPerPage" 
+  [(ngModel)]="currentPage"
+  (pageChanged)="onPageChange($event)">
+</pagination>
