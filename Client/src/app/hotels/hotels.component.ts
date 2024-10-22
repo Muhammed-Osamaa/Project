@@ -15,7 +15,7 @@ import { Rooms } from '../_models/Rooms';
 export class HotelsComponent implements OnInit{
   paginatedRooms = signal<Rooms[]>([]);
   currentPage = signal(1);          
-  itemsPerPage = 10;                 
+  itemsPerPage = 12;                 
   totalItems = signal(0);            
   roomService = inject(HotelsService);
 
