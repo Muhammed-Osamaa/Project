@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ZMAtJK5o3u8=",
+  "dgSpecHash": "xPo6sH9NQsk=",
   "success": true,
-  "projectFilePath": "C:\\Users\\muham\\OneDrive\\Desktop\\Project\\api\\API.csproj",
+  "projectFilePath": "C:\\Users\\muham\\OneDrive\\Desktop\\Project\\API\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\muham\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\muham\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

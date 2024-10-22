@@ -11,4 +11,8 @@ public interface IRoomRepository
     Task<RoomDto?> GetRoomByIdAsync(int id);
     Task<IEnumerable<RoomDto>> FilterRooms(string country , int roomType);
     Task<bool> SaveAllAsync();
+    Task<Room> AddRoomAsync(RoomDto roomDTO);
+    void UpdateRoom(Room room);
+    void DeleteRoom(Room room);
+    Task<Room?> GetRoomWithIdAsync(int id);
 }

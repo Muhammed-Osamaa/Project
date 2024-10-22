@@ -14,10 +14,7 @@ import { Router } from '@angular/router';
 export class HotelsComponent implements OnInit{
   
   roomService = inject(HotelsService);
-  
   ngOnInit() {
     if(!this.roomService.hotels()) this.roomService.loadRooms();    
   }
-
- 
 }

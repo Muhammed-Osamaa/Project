@@ -1,0 +1,54 @@
+<div class="container">
+    <h4 class="alert-heading my-3 px-2">Rooms</h4>
+  
+    <div class="data-table">
+      <div class="d-flex justify-content-end mb-3">
+        <a routerLink="/dashboard/RoomCreate" class="my-btn btn-dark-green">Add Room</a>
+      </div>
+      <div class="table-wraper">
+        <table class="table table-hover table-bordered mb-3 table-for-wraper">
+          <thead>
+            <tr>
+              <th>Id</th>
+              <th>Describtion</th>
+              <th>Title</th>
+              <th>Address</th>
+              <th>Owner</th>
+              <th>City</th>
+              <th>Country</th>
+              <th>Price</th>
+              <th>Rating</th>
+              <th>Type</th>
+              <th>IsActive</th>  
+              <th>Operations</th>       
+            </tr>
+          </thead>
+          <tbody>
+            @for (r of roomService.hotels(); track r.roomID) {
+              <tr>
+                <td>{{r.roomID}}</td>
+                <td>{{r.roomDescribtion}}</td>
+                <td>{{r.roomTitle}}</td>
+                <td>{{r.roomAddress}}</td>
+                <td>{{r.roomOwner}}</td>
+                <td>{{r.city}}</td>
+                <td>{{r.country}}</td>
+                <td>{{r.price}}</td>
+                <td>{{r.rating}}</td>
+                <td>{{r.roomType}}</td>
+                <td>{{r.isActive}}</td>
+                <td>
+                  <a routerLink="/dashboard/details/{{r.roomID}}" class="btn btn-info">Details</a>
+                  <a routerLink="/dashboard/RoomDelete/{{r.roomID}}" class="btn btn-danger">Delete</a>
+                  <a routerLink="/dashboard/RoomUpdate/{{r.roomID}}" class="btn btn-light">Update</a>
+                </td>
+              </tr>
+            }
+           
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <router-outlet></router-outlet>
+  

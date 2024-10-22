@@ -17,7 +17,8 @@ export class HotelDetailsComponent implements OnInit {
   id = input.required<string>();
   room = signal<Rooms|undefined>(undefined);
 
-  ngOnInit(): void {
+  ngOnInit(): void {   
+    
     this.hotelService.filterRoomsById(this.id()).subscribe({
       next:next=> this.room.set(next),
       complete:() => console.log(this.room())

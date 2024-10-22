@@ -1,4 +1,4 @@
-import { Component, input } from '@angular/core';
+import { Component, Input, input } from '@angular/core';
 import { Rooms } from '../_models/Rooms';
 import { RouterLink } from '@angular/router';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
@@ -12,5 +12,5 @@ import { CurrencyPipe } from '@angular/common';
   styleUrl: './hotel-card.component.css'
 })
 export class HotelCardComponent {
-  room = input.required<Rooms>();
+  room = input.required<Rooms>(); //child requires value from perant
 }

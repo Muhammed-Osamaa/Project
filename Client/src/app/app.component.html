@@ -17,18 +17,23 @@
         </div>
       </div>
 
-      <div class="col-5">
-        <div class="form-floating">
-          <input type="type" class="form-control" placeholder="Guests" autocomplete="off"
-          [(ngModel)]="guest" name="guest">
-          <label for="floatingPassword">Guests</label>
+      <div class="col-7 form-group mt-3 ">
+        <div>
+          <!-- <input type="type" class="form-control" placeholder="Guests" autocomplete="off"
+          [(ngModel)]="guest" name="guest"> -->
+          <label for="exampleSelect1" class="form-label">Guests</label>
+          <select class="form-select" id="exampleSelect1" [(ngModel)]="guest" name="guest">
+            <option *ngFor="let option of list" [value]="option">{{ option }}</option>
+          </select>
         </div>
       </div>
     </div>
 
     <div class="col-12 text-end ">
-        <button type="submit" class="btn btn-success  btn-lg">Send</button>
+        <button  type="submit" class="btn btn-success  btn-lg">Send</button>
     </div>
   </form>
-  <router-outlet/>
+
+  <router-outlet/> 
+  
 </div>

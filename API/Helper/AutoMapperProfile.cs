@@ -9,7 +9,7 @@ public class AutoMapperProfile : Profile
 {
     public AutoMapperProfile()
     {
-        CreateMap<Room,RoomDto>();
-        CreateMap<Photos,PhotoDto>();
+        CreateMap<Room,RoomDto>().ReverseMap();
+        CreateMap<Photos,PhotoDto>().ReverseMap();
     }
 }

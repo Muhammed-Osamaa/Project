@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\muham\\OneDrive\\Desktop\\Project\\api\\API.csproj": {}
+    "C:\\Users\\muham\\OneDrive\\Desktop\\Project\\API\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\muham\\OneDrive\\Desktop\\Project\\api\\API.csproj": {
+    "C:\\Users\\muham\\OneDrive\\Desktop\\Project\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\muham\\OneDrive\\Desktop\\Project\\api\\API.csproj",
+        "projectUniqueName": "C:\\Users\\muham\\OneDrive\\Desktop\\Project\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\muham\\OneDrive\\Desktop\\Project\\api\\API.csproj",
+        "projectPath": "C:\\Users\\muham\\OneDrive\\Desktop\\Project\\API\\API.csproj",
         "packagesPath": "C:\\Users\\muham\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\muham\\OneDrive\\Desktop\\Project\\api\\obj\\",
+        "outputPath": "C:\\Users\\muham\\OneDrive\\Desktop\\Project\\API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\muham\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,7 +1,7 @@
 <div class="row">
     @for (room of roomService.hotels(); track room.roomID) {
         <div class="col-4 mt-4">
-            <app-hotel-card [room]="room"/>
+            <app-hotel-card [room]="room" />
         </div>
     }
 </div>
